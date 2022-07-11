@@ -2,14 +2,17 @@
 int (*get_print(char s))(va_list)
 {
 	ph func_arr[] = {
-		{'c', print_char}
+		{'c', print_char},
+		{'s', print_string}
 	};
 
-	int flags = 1;// this is just a number of elements in the func_arr, dis is needed for the loop condition
-	int i;//unlike that repo, i removed the register keyword
+	int flags = 2;
+
+	int i;
+
 	for (i = 0; i < flags; i++)
-		if (func_arr[i].c == s)//comparison with the func_arr character and returns corresponding function
+		if (func_arr[i].c == s)
 			return (func_arr[i].f);
 	return (NULL);
-	//DELETE COMMENTS WHEN DONE REVIEWING ;)
+
 }
