@@ -4,12 +4,19 @@
 #include <stdlib.h>
 #include <stdarg.h>
 
+/**
+ * struct printHandler - struct to choose the right function depending
+ * on the format specifier passed to the _printf()
+ * @c: format specifier
+ * @f: pointer to the correct printing function
+ */
 typedef struct prtintHandler
 {
 	char c;
 	int (*f)(va_list ap);
 } ph;
 
+/* _printf */
 int _printf(const char *format, ...);
 
 /* print alpha */
