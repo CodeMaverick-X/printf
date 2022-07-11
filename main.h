@@ -16,6 +16,25 @@ typedef struct prtintHandler
 	int (*f)(va_list ap);
 } ph;
 
+/**
+ * struct flags - containing flags to display
+ * when the flag specifier is passed to _printf func
+ * @plus: flag for the '+' character
+ * @space: flag for the ' ' charater
+ * @hash: flag for the '#' character
+ */
+typedef struct flags
+{
+	int plus;
+	int space;
+	int hash;
+} flags_t;
+
+/* print_nums */
+int print_num(va_list l, flags_t *f);
+int count_digit(int i);
+void print_number(int n);
+
 /* _printf */
 int _printf(const char *format, ...);
 
