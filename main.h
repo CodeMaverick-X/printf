@@ -31,7 +31,7 @@ typedef struct flags
 } flags_t;
 
 /* print_nums */
-int print_int(va_list l, flags_t *f);
+int print_int(va_list l);
 int count_digits(int i);
 void print_num(int n);
 

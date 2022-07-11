@@ -2,21 +2,17 @@
 /**
  * print_int - prints an integer
  * @l: arguments of type va_list from _printf function
- * @f: argument of type flags for each format flags
  *
  * Return: integer
  */
-int print_int(va_list l, flags_t *f)
+int print_int(va_list l)
 {
 	int n = va_arg(l, int);
 	int i = count_digits(n);
 
-	if (f->space == 1 && f->plus == 0 && n >= 0)
-		i += _putchar(' ');
-	if (f->plus == 1 && n >= 0)
-		i += _putchar('+');
-	if(n <= 0 )
+	if(n <= 0)
 		i++;
+
 	print_num(n);
 	return (i);
 }
