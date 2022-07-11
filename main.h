@@ -10,7 +10,7 @@
  * @c: format specifier
  * @f: pointer to the correct printing function
  */
-typedef struct prtintHandler
+typedef struct printHandler
 {
 	char c;
 	int (*f)(va_list ap);
