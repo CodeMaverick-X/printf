@@ -5,7 +5,7 @@ int main(void)
 	char str[] = "bot";
 
 	_printf("%c", f);
-	_printf("%s",str);
+	_printf("%s", str);
 
 	return (0);
 }

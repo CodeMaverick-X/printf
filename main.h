@@ -10,6 +10,8 @@ typedef struct prtintHandler
 	int (*f)(va_list ap);
 } ph;
 
+int _printf(const char *format, ...);
+
 /* print alpha */
 int print_char(va_list l);
 int print_string(va_list l);

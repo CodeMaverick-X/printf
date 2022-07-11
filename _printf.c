@@ -33,7 +33,7 @@ int _printf(const char *format, ...)
 			else
 			{
 				pfunc = get_print(*p);
-				count += pfunc(arguments);
+				count += (pfunc)? pfunc(arguments): _printf("%%%c", *p);
 			}
 		}
 		else
