@@ -10,7 +10,7 @@
 int _printf(const char *format, ...)
 {
 	int (*pfunc)(va_list); //this is a pointer to the function that will be returned by get_print
-	const char *p; //this is a pointer to point to the address that format is pointing to, so that it can be increased to get the rest values in the string
+	const char *p; //this is a pointer to the address that format is pointing to, so that it can be increased to get the rest values in the string
 	va_list arguments; //our normal va_list pointr to the arguments
 
 	int count = 0;// notice that in the repo i sent you there was a register keyword here do research on it, its not actually needed
