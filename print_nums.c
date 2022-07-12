@@ -18,7 +18,7 @@ int print_int(va_list l, flags_t *f)
 		i += _putchar('+');
 	if(n <= 0 )
 		i++;
-	print_number(n);
+	print_num(n);
 	return (i);
 }
 
@@ -38,9 +38,9 @@ void print_num(int n)
 	}
 	else
 		u = n;
-	if(n / 10)
-		print_num(n / 10);
-	_putchar((n % 10) + '0');
+	if(u / 10)
+		print_num(u / 10);
+	_putchar((u % 10) + '0');
 }
 
 
@@ -52,7 +52,7 @@ void print_num(int n)
  */
 int count_digits(int i)
 {
-	unsigned int n;
+	unsigned int n = 0;
 	unsigned int u;
 
 	if (i < 0)
