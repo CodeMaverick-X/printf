@@ -32,7 +32,7 @@ typedef struct flags
 
 /* print_nums */
 int print_int(va_list l, flags_t *f);
-int count_digit(int i);
+int count_digits(int i);
 void print_num(int n);
 
 /* _printf */
