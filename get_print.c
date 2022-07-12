@@ -4,7 +4,7 @@ int (*get_print(char s))(va_list)
 	ph func_arr[] = {
 		{'c', print_char},
 		{'s', print_string},
-		{'d', print_num},
+		{'d', print_int},
 		{'i', print_int}
 	};
 

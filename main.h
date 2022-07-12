@@ -31,9 +31,9 @@ typedef struct flags
 } flags_t;
 
 /* print_nums */
-int print_num(va_list l, flags_t *f);
+int print_int(va_list l, flags_t *f);
 int count_digit(int i);
-void print_number(int n);
+void print_num(int n);
 
 /* _printf */
 int _printf(const char *format, ...);
