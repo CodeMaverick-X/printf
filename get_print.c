@@ -13,10 +13,12 @@ int (*get_print(char s))(va_list)
 {
 	ph func_arr[] = {
 		{'c', print_char},
-		{'s', print_string}
+		{'s', print_string},
+		{'d', print_int},
+		{'i', print_int}
 	};
 
-	int flags = 2;
+	int flags = 4;
 
 	int i;
 
