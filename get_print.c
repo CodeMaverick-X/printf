@@ -15,10 +15,11 @@ int (*get_print(char s))(va_list)
 		{'c', print_char},
 		{'s', print_string},
 		{'d', print_int},
-		{'i', print_int}
+		{'i', print_int},
+		{'b', print_binary}
 	};
 
-	int flags = 4;
+	int flags = 5;
 
 	int i;
 

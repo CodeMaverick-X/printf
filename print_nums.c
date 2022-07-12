@@ -10,7 +10,7 @@ int print_int(va_list l)
 	int n = va_arg(l, int);
 	int i = count_digits(n);
 
-	if(n <= 0)
+	if (n <= 0)
 		i++;
 
 	print_num(n);
@@ -33,15 +33,15 @@ void print_num(int n)
 	}
 	else
 		u = n;
-	if(u / 10)
+	if (u / 10)
 		print_num(u / 10);
 	_putchar((u % 10) + '0');
 }
 
 
 /**
- * count_digit - returns the number of digit in an integer
- * @i; parameter for integers
+ * count_digits - returns the number of digit in an integer
+ * @i: parameter for integers
  *
  * Return: on success, total count of intergers
  */

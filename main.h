@@ -42,6 +42,12 @@ int _printf(const char *format, ...);
 int print_char(va_list l);
 int print_string(va_list l);
 
+/* print_base */
+int print_binary(va_list l);
+
+/* converter */
+char *convert(unsigned long int num, int base, int lowercase);
+
 /* get_print */
 int (*get_print(char s))(va_list);
 
