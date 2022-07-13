@@ -18,13 +18,14 @@ int (*get_print(char s))(va_list)
 		{'d', print_int},
 		{'i', print_int},
 		{'b', print_binary},
+		{'p', print_address},
 		{'x', print_hex},
 		{'X', print_hex_big},
 		{'o', print_octal},
 		{'u', print_unsigned}
 	};
 
-	int flags = 10;
+	int flags = 11;
 
 	int i;
 
