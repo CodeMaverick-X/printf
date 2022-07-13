@@ -55,6 +55,9 @@ char *convert(unsigned long int num, int base, int lowercase);
 /* get_print */
 int (*get_print(char s))(va_list);
 
+/* custom functions */
+int print_bigS_format(va_list l);
+
 /* write funcs */
 int _putchar(char c);
 int _puts(char *str);

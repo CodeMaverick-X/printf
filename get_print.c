@@ -14,6 +14,7 @@ int (*get_print(char s))(va_list)
 	ph func_arr[] = {
 		{'c', print_char},
 		{'s', print_string},
+		{'S', print_bigS_format},
 		{'d', print_int},
 		{'i', print_int},
 		{'b', print_binary},
@@ -23,7 +24,7 @@ int (*get_print(char s))(va_list)
 		{'u', print_unsigned}
 	};
 
-	int flags = 9;
+	int flags = 10;
 
 	int i;
 
