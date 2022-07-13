@@ -16,10 +16,14 @@ int (*get_print(char s))(va_list)
 		{'s', print_string},
 		{'d', print_int},
 		{'i', print_int},
-		{'b', print_binary}
+		{'b', print_binary},
+		{'x', print_hex},
+		{'X', print_hex_big},
+		{'o', print_octal},
+		{'u', print_unsigned}
 	};
 
-	int flags = 5;
+	int flags = 9;
 
 	int i;
 

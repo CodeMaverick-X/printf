@@ -34,6 +34,7 @@ typedef struct flags
 int print_int(va_list l);
 int count_digits(int i);
 void print_num(int n);
+int print_unsigned(va_list l);
 
 /* _printf */
 int _printf(const char *format, ...);
@@ -44,6 +45,9 @@ int print_string(va_list l);
 
 /* print_base */
 int print_binary(va_list l);
+int print_hex(va_list l);
+int print_hex_big(va_list l);
+int print_octal(va_list l);
 
 /* converter */
 char *convert(unsigned long int num, int base, int lowercase);
