@@ -29,7 +29,7 @@ int print_bigS_format(va_list l)
 		}
 		else
 		{
-			count += _puts(s[i]);
+			count += _putchar(s[i]);
 		}
 	}
 	return (count);
