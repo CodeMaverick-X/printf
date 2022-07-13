@@ -4,7 +4,7 @@
  *
  * Return: count of printed address
  */
-int *print_address(va_list l)
+int print_address(va_list l)
 {
 	char *str;
 	unsigned long int p = va_arg(l, unsigned long int);

@@ -57,6 +57,7 @@ int (*get_print(char s))(va_list);
 
 /* custom functions */
 int print_bigS_format(va_list l);
+int print_address(va_list l);
 
 /* write funcs */
 int _putchar(char c);
